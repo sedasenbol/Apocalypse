@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject meteorExplosionPrefab;
     private bool collidingWithBlock = false;
+    private int score = 0;
+    private UIManager uIManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class Player : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         transform.position = new Vector3(0, 0, 0);
         rb = GetComponent<Rigidbody>();
+        uIManager = GameObject.Find("Canvas").GetComponent<UIManager>();
     }
 
     // Update is called once per frame
@@ -43,6 +46,7 @@ public class Player : MonoBehaviour
     {
         if (isAlive)
         {
+            AddScore();
             XAxisCheck();
             YAxisCheck();
             //MoveLeftRight();
@@ -56,6 +60,14 @@ public class Player : MonoBehaviour
             {
                 StartCoroutine(LeanBack());
             }
+        }
+    }
+    private void AddScore()
+    {
+        score = (int) transform.position.z * 10;
+        if (uIManager != null)
+        {
+            uIManager.ShowScore(score);
         }
     }
     private void FixedUpdate()
@@ -250,6 +262,10 @@ public class Player : MonoBehaviour
         if (gameManager != null)
         {
             gameManager.GameOver();
+        }
+        if (uIManager != null)
+        {
+            uIManager.GameOverText();
         }
         isAlive = false;
         StartCoroutine(SlowMotionY(new Vector3(0, (0.26076f-transform.position.y)/motionInverseSpeed, 0),motionInverseSpeed));

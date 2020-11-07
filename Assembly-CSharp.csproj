@@ -72,6 +72,7 @@
     <Compile Include="Assets\Fire\Prefab\Script\FireProjectileScript.cs" />
     <Compile Include="Assets\Fire\Prefab\Script\MeteorSwarmScript.cs" />
     <Compile Include="Assets\Fire\Prefab\Script\SingleLineAttribute.cs" />
+    <Compile Include="Assets\Fire\Prefab\Script\UIManager.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Demon.cs" />
