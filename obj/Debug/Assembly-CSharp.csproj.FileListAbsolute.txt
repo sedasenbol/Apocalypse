@@ -1,0 +1,2 @@
+D:\Unity\Unity Projects\First Game of Mine\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Unity\Unity Projects\First Game of Mine\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

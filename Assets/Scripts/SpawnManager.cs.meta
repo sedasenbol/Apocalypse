@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 0922e6d456c67c84abd75004f859d7f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _gatePrefab: {fileID: 6306713042789838207, guid: f04e824d8e866db419999ba64135b1b2,
+      type: 3}
+  - _gateContainer: {instanceID: 0}
+  - _wallOfFirePrefab: {fileID: 3462239584308994338, guid: d996c81ad0fbd4a40bcd1a551b60c3b5,
+      type: 3}
+  - _wallOfFireContainer: {instanceID: 0}
+  - _demonContainer: {instanceID: 0}
+  - _demonPrefab: {fileID: 8194565228094798753, guid: 664e15bcd5bc7c44e84e3fcb4c1773b7,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
